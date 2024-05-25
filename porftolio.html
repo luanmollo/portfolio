@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #3d3d3d;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            background-color: #f8f8f8;
+            margin-top: 90px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .presentacion {
+            display: flex;
+            align-items: center;
+        }
+
+        .presentacion img {
+            width: 50%;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        @media (max-width: 768px) {
+            #header{
+                font-size: small;
+            }
+
+            .presentacion {
+                flex-direction: column;
+            }
+
+            .presentacion img {
+                width: 80%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+
+        /* #profilepic {
+            width: 400px;
+            height: auto;
+        } */
+
+        .camino,
+        .presentation,
+        .contact,
+        .links,
+        .roadmap {
+            margin-bottom: 20px;
+        }
+
+        .social-links a,
+        .cv-link a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact input,
+        .contact textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .form-input::placeholder {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header">
+        <h1>LUAN MOLLO | .NET DEV
+        </h1>
+    </header>
+
+    <div class="main-container">
+        <div class="container">
+            <section class="presentacion">
+                <img src="img/profilepic.jpg" alt="Imagen de presentación" id="profilepic">
+                <div>
+
+                    <h2>¿Quién soy?</h2>
+                    <p>
+                        Desarrollador .NET con 2 años de experiencia. Si bien mis conocimientos están enfocados al
+                        backend, también me he desempeñado como desarrollador fullstack en mis distintas experiencias
+                        laborales.
+                        En mi carrera he demostrado la capacidad de trabajar muy bien de forma autónoma, aunque es de
+                        gran importancia para mí la interacción y la colaboración con otros profesionales.
+                    </p>
+                </div>
+            </section>
+            <section class="camino">
+                <h2>¿Cómo llegué hasta acá?</h2>
+                <p>Hola! Si estás acá es porque te envié este enlace, o quizás te interese trabajar conmigo. Tal vez
+                    simplemente llegaste casualmente a mi sitio. En cualquier caso, quiero invitarte a un recorrido por
+                    mi
+                    carrera como desarrollador de software.
+                    Hace un tiempo atrás, luego de un receso laboral de algunos meses, me decidí por retomar mis
+                    actividades
+                    en el mercado IT. Para mi desgracia, este no era lo que solía ser… Me encontré con un panorama
+                    desalentador: vacantes súper exigentes, empresas saturadas de postulaciones, y una competencia cada
+                    vez
+                    más grande. Algunas entrevistas con RH, algunas técnicas, y muchos muchos mails… pero esa nueva
+                    oportunidad nunca llegaba.
+                    Para ese entonces yo ya tenía 2 años de experiencia como desarrollador, pero aún así sentía que no
+                    sabía
+                    lo suficiente para continuar con mi carrera… o al menos eso me daban a entender mis pobres
+                    resultados en
+                    las entrevistas de trabajo.
+                    Es por eso que decidí reencontrarme con lo que me llevó a empezar a programar algunos años antes: el
+                    aprendizaje autodidacta. Si algo lindo tiene esta profesión es que uno puede, con tan solo algunos
+                    clicks, una pequeña investigación, y varias (a veces bastantes) horas de estudio, aprender
+                    prácticamente
+                    cualquier cosa que se proponga.
+                    Para esto me propuse dedicar al menos un pequeño rato al día para aprender algo nuevo, pero ¿qué?
+                    Por supuesto basé mi ruta de aprendizaje en muchas experiencias de amigos y colegas, profesores y
+                    hasta
+                    youtubers o bloggers. También incluí algunos ¿¿caprichos?? o simplemente pequeñas cosas que me
+                    llamaban
+                    la atención o me gustaban en su momento.
+                    Dicho esto, acá está mi ruta de aprendizaje de desarrollo de software. Espero que si sos recruiter o
+                    colega, te sirva para entender un poco mi historia y mi background, y si estás empezando a
+                    programar,
+                    ¿por qué no? tal vez te sirva como inspiración o guía. Gracias por llegar hasta acá.</p>
+            </section>
+            <section class="roadmap">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fboard%2FABVHElMPfA6DwMIEI0boYl%2FRoadmap-ASP-.NET%3Fnode-id%3D0%253A1%26t%3DOjJg2owe6uy8XRYz-1"
+                    allowfullscreen></iframe>
+            </section>
+
+            <section class="links">
+                <h2>Mis redes</h2>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/tu-usuario" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/tu-usuario" target="_blank">GitHub</a>
+                </div>
+                <div class="cv-link">
+                    <a href="tu-cv.pdf" target="_blank">Descargar CV</a>
+                </div>
+            </section>
+
+            <section class="contact">
+                <h2>Contacto</h2>
+                <p>Si completas este formulario, el mensaje llegará a mi casilla de correo. Por favor verificá tu
+                    dirección de correo así puedo responderte :)</p>
+                <form action="enviar-mensaje.php" method="post">
+                    <input class="form-input" type="text" name="nombre" placeholder="Nombre" required>
+                    <input class="form-input" type="email" name="email" placeholder="Email" required>
+                    <textarea class="form-input" name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>
