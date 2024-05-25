@@ -1,0 +1,106 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #3d3d3d;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+    margin-top: 90px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+}
+
+.presentacion img {
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    #header{
+        font-size: small;
+    }
+
+    .presentacion {
+        flex-direction: column;
+    }
+
+    .presentacion img {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* #profilepic {
+    width: 400px;
+    height: auto;
+} */
+
+.camino,
+.presentation,
+.contact,
+.links,
+.roadmap {
+    margin-bottom: 20px;
+}
+
+.social-links a,
+.cv-link a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-input::placeholder {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: #888;
+}
