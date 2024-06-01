@@ -1,106 +1,182 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #3d3d3d;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #3d3d3d;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
 }
 
 .main-container {
-    display: flex;
-    justify-content: center;
-    background-color: #f8f8f8;
-    margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+  margin-top: 90px;
 }
 
 .container {
-    width: 80%;
-    max-width: 1200px;
-    padding: 20px;
-    margin: 20px 0;
+  width: 80%;
+  max-width: 1200px;
+  padding: 20px;
+  margin: 20px 0;
 }
 
 .presentacion {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .presentacion img {
-    width: 50%;
-    height: auto;
-    margin-right: 20px;
-}
-
-@media (max-width: 768px) {
-    #header{
-        font-size: small;
-    }
-
-    .presentacion {
-        flex-direction: column;
-    }
-
-    .presentacion img {
-        width: 80%;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
+  width: 40%;
+  height: auto;
+  margin-right: 40px;
 }
 
 
-/* #profilepic {
-    width: 400px;
-    height: auto;
-} */
 
 .camino,
 .presentation,
 .contact,
 .links,
 .roadmap {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .social-links a,
 .cv-link a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
 }
 
 .contact form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact input,
 .contact textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .contact button {
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 4px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
 }
 
 .form-input::placeholder {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 14px;
-    color: #888;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  color: #888;
 }
+
+.info-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-section {
+  margin-bottom: 20px;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0));
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0));
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 30s slide infinite linear;
+}
+
+.logos-slide a {
+  border: 2px solid #333;
+  border-radius: 5px;
+  color: #333;
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+
+@media (max-width: 768px) {
+  #header {
+    font-size: small;
+  }
+
+  .presentacion {
+    flex-direction: column;
+  }
+
+  .presentacion img {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .info-container {
+    width: 100%;
+  }
+
+
+}
+
+
