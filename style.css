@@ -3,6 +3,8 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  background-color: #f8f8f8;
+
 }
 
 header {
@@ -30,12 +32,14 @@ header {
   margin: 20px 0;
 }
 
-.presentacion {
+.presentacion,
+.gracias {
   display: flex;
   align-items: center;
 }
 
-.presentacion img {
+.presentacion img,
+.gracias img {
   width: 40%;
   height: auto;
   margin-right: 40px;
@@ -45,6 +49,7 @@ header {
 
 .camino,
 .presentation,
+.gracias,
 .contact,
 .links,
 .roadmap {
@@ -95,7 +100,7 @@ header {
   margin-bottom: 20px;
 }
 
-.social-icons{
+.social-icons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -156,17 +161,28 @@ header {
   padding: 1rem 2rem;
 }
 
+.gracias_button {
+  font-size: 14px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+
 
 @media (max-width: 768px) {
   #header {
     font-size: small;
   }
 
-  .presentacion {
+  .presentacion,
+  .gracias {
     flex-direction: column;
   }
 
-  .presentacion img {
+  .presentacion img,
+  .gracias img {
     width: 80%;
     margin-right: 0;
     margin-bottom: 20px;
@@ -178,5 +194,3 @@ header {
 
 
 }
-
-
